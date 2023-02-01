@@ -1,0 +1,429 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url("images/clouds.jpg.jpg");
+    background-size: cover;
+}
+.App{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+.home {
+    display:flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 40%;
+    aspect-ratio: 4/3;
+    border-radius: 28px;
+      
+}
+.sad-cloud {
+    margin-top: -20px;
+    width: 80px;
+    height: 80px;
+}
+.popup-content p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ok-button {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;    
+}
+.ok-button:hover{
+    background-color: rgb(205, 205, 212); 
+}
+
+.buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 200px;
+    
+}
+.cancel-button{
+    background-color: #5682bd; 
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cancel-button:hover {
+    background-color:#77a1d8;
+}
+.retry-button{
+  background-color: #5682bd; 
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.retry-button:hover{
+    background-color:#77a1d8;
+}
+.popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}  
+.popup-content {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(245, 245, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.popup2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.popup-content2{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(245, 245, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+.popup-content2 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.ok-button2 {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ok-button2:hover {
+    background-color: rgb(205, 205, 212); 
+}
+.happy-cloud {
+    margin-top: -20px;
+    width: 80px;
+    height: 80px;
+}  
+.popup-content3 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+.popup3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.yes-no-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.popup-content3 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(245, 245, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+.yes-button {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.yes-button:hover {
+    background-color: rgb(205, 205, 212); 
+}
+.no-button {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.no-button:hover{
+    background-color: rgb(205, 205, 212); 
+}
+.popup4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup-content4 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(245, 245, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+.yes-no-btn2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.yes-button2 {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.yes-button2:hover{
+    background-color: rgb(205, 205, 212); 
+}
+.no-button2 {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.no-button2:hover{
+    background-color: rgb(205, 205, 212); 
+}
+.popup-content4 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;   
+}
+
+.popup5 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup-content5 {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(245, 245, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+.yes-no-btn3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.yes-button3 {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.yes-button3:hover{
+    background-color: rgb(205, 205, 212); 
+}
+.no-button3 {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.no-button3:hover{
+    background-color: rgb(205, 205, 212); 
+}
+.popup-content5 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;   
+}
+.popup6 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.popup-content6{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(245, 245, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+.ok-button3 {
+    position: relative;
+    background-color: rgb(190, 190, 209); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin:5px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ok-button3:hover{
+    background-color: rgb(205, 205, 212); 
+}
+.crying-girl {
+    margin:5px;
+}
+.popup-content6 p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.yes-popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.yes-popup-content{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(211, 119, 119);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+}
+.ILY {
+    position: relative;
+    background-color: rgb(250, 187, 187); 
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    margin:5px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ILY:hover{
+    background-color: rgb(247, 205, 205); 
+}
+.yes-popup-content p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
